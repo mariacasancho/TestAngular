@@ -1,0 +1,62 @@
+[
+{
+"id": "ELL7P0U",
+"level": 3,
+"slot": 23,
+"type": "Car"
+}, 
+{
+"id": "Z0W4U2G",
+"level": 1,
+"slot": 10,
+"type": "Motorbike"
+},
+{
+"id": "NSMYSZT",
+"level": 3,
+"slot": 6,
+"type": "Motorbike"
+}, 
+{
+"id": "AV1J799",
+"level": 2,
+"slot": 6,
+"type": "Motorbike"
+}, 
+{
+"id": "CKD5R9S",
+"level": 3,
+"slot": 9,
+"type": "Car"
+}, 
+{
+"id": "11BX9PW",
+"level": 4,
+"slot": 8,
+"type": "Motorbike"
+}, 
+{
+"id": "SLXVV5F",
+"level": 3,
+"slot": 21,
+"type": "Motorbike"
+}, 
+{
+"id": "5NNR6U1",
+"level": 3,
+"slot": 25,
+"type": "Car"
+}, 
+{
+"id": "2MRYSGP",
+"level": 4,
+"slot": 6,
+"type": "Car"
+}, 
+{
+"id": "U38K0FZ",
+"level": 1,
+"slot": 13,
+"type": "Motorbike"
+}
+]
