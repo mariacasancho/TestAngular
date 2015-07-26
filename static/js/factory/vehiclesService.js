@@ -1,23 +1,29 @@
 app.factory("vehiclesService", function($http){
-    var _vehicles = [];
  
-    var _getVehicles = function(){
-        $http.get("/js/data/vehicles.json")
-            .then(function(results){
-                //Success
-                angular.copy(results.data, _vehicles); //this is the preferred; instead of $scope.movies = result.data
-            }, function(results){
-                //Error
-            })
-    }
+    var _getVehicles = function(lvl){
+        var temp = parking.GetVehicles(0);
+        if (temp.length < 1){
+            return temp;
+        }else{
+            return parking.GetVehicles(lvl);
+        }
+
+        
+    };
  
     var _addNewVehicle = function(vehicle){
-        _vehicles.splice(0, 0, vehicle);
-    }
+        //_vehicles.splice(0, 0, vehicle);
+        parking.AddVehicle(vehicle);
+    };
+
+      var _removeVehicle = function(level, space){
+        //_vehicles.splice(0, 0, vehicle);
+        parking.RemoveVehicle(level, space);
+    };
  
     return{
-        vehicles: _vehicles,
         getVehicles: _getVehicles,
-        addNewVehicle: _addNewVehicle
+        addNewVehicle: _addNewVehicle,
+        removeVehicle: _removeVehicle
     };
 });
